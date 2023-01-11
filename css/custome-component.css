@@ -1,0 +1,214 @@
+
+/* ************************** */
+/* custome "texts" style start */
+.custome-title{
+    font-size: 17px;
+    font-weight: 500;
+    color: var(--bs-dark);
+    margin-right: 10px;
+}
+@media (max-width: 1100px){
+    .custome-title{
+        font-size: 16px;
+    }
+}
+
+.custome-text{
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--bs-dark);
+    margin-right: 8px;
+}
+@media (max-width: 1100px){
+    .custome-text{
+        font-size: 14px;
+    }
+}
+
+.custome-text-small{
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--bs-gray);
+}
+@media (max-width: 1100px){
+    .custome-text-small{
+        font-size: 13px;
+    }
+}
+/* custome "texts" style end */
+/* ********************** */
+
+
+
+
+
+/* ***************************** */
+/* custome "button" style start */
+.custome-btn{
+    padding: 7px 12px;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 9px;
+}
+@media (max-width: 1100px){
+    .custome-btn{
+        font-size: 13px;
+    }
+}
+
+.custome-btn:focus{
+    outline: none;
+}
+
+.custome-btn-fill{
+    background-color: var(--bs-green);
+    color: #fff;
+    border: 1px solid var(--bs-green);
+}
+
+.custome-btn-fill:hover{
+    background-color: #248b3c;
+    color: #fff;
+    border: 1px solid #248b3c;
+}
+
+.custome-btn-outline{
+    background-color: #fff;
+    color: var(--bs-green); 
+    border: 1px solid var(--bs-green);
+}
+
+.custome-btn-outline:hover{
+    background-color: var(--bs-green);
+    color: #fff; 
+    border: 1px solid var(--bs-green);
+}
+/* custome "button" style end */
+/* ************************* */
+
+
+
+
+
+/* ***************************** */
+/* custome "cards" style start */
+.custome-card{
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    border-radius: 9px;
+    padding: 0 20px;
+    box-shadow: 0 0 15px -11px var(--bs-gray-700);
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.custome-card-header{
+    width: 100%;
+    height: auto;
+    display: grid;
+    align-items: center;
+    justify-items: right;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--bs-gray-400);
+}
+
+.custome-card-header-icon{
+    grid-template-columns: 5% 95%;
+    gap: 10px;
+}
+@media (max-width: 1100px){
+    .custome-card-header-icon{
+        gap: 20px;
+    }
+}
+
+.custome-card-body{
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+}
+
+.custome-card-title{
+    font-size: 17px;
+    font-weight: bold;
+    color: var(--bs-dark);
+    margin: 10px 0;
+}
+@media (max-width: 1100px){
+    .custome-card-title{
+        font-size: 15px;
+    }
+}
+/* custome "cards" style end */
+/* ************************* */
+
+
+
+
+
+/* ************************************ */
+/* custome "toggle switch" style start */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+}
+  
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+  
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    left: 4px;
+    bottom: 5px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+input:checked + .slider {
+    background-color: var(--bs-green);
+}
+  
+input:focus + .slider {
+    box-shadow: 0 0 1px var(--bs-green);
+}
+  
+input:checked + .slider:before {
+    -webkit-transform: translateX(25px);
+    -ms-transform: translateX(25px);
+    transform: translateX(25px);
+}
+  
+/* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+}
+  
+.slider.round:before {
+    border-radius: 50%;
+}
+/* custome "toggle switch" style end */
+/* ******************************** */

@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>پنل مدیریت | بازار آنلاین ایران</title>
+
+
+    <!-- fonts css -->
+    <link rel="stylesheet" href="./css/Vazir-Font.css">
+        
+    <!-- main style css -->
+    <link rel="stylesheet" href="./css/main.css">
+
+    <!-- custome components style -->
+    <link rel="stylesheet" href="./css/custome-component.css">
+
+    <!-- responsive style css -->
+    <link rel="stylesheet" href="./css/responsive.css">
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap-utilities.min.css">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.rtl.css">
+
+</head>
+<body>
+    <div class="all-element">
+        <!-- ---------- header, section content start ---------- -->
+        <div class="header-section">
+
+            <!-- ----- nav bar start ----- -->
+            <header class="header">
+                <!-- search box -->
+                <div class="search-box">
+                    <form action="#">
+                        <span>
+                            <img src="./Img/search-icon.svg" alt="search icon">
+                        </span>
+                        <input type="text" placeholder="جستجو...">
+                    </form>
+                </div>
+                
+                <!-- header title -->
+                <div class="header-title">
+                    <h3>بازار آنلاین ایران</h3>
+                </div>
+
+                <!-- btn open side bar -->
+                <div class="btn-open-sidebar">
+                    <button onclick="toggleMenu()">
+                        <img src="./Img/menu-icon.svg" alt="menu icon">
+                    </button>
+                </div>
+            </header>
+            <!-- ----- nav bar end ----- -->
+
+
+
+            <!-- ----- content start ----- -->
+            <section class="content">
+
+                <!-- ----- content header start ----- -->
+                <div class="content-header">
+                    <div class="save-btn">
+                        <button type="button" class="custome-btn custome-btn-fill">ذخیره و انتشار</button>
+                        <button type="button" class="custome-btn custome-btn-outline">پیش نویس</button>    
+                    </div>
+                </div>
+                <!-- ----- content header end ----- -->
+
+
+
+                <!-- ----- content box, inputs start ----- -->
+                <div class="content-box">
+
+                    <!-- ----- right box start ------ -->
+                    <div class="right-box">
+
+                        <!-- ----- product information start ----- -->
+                        <div class="pro-info mb-5">
+                            <!-- product name -->
+                            <div class="pro-name mb-3">
+                                <h4 class="custome-title">نام کالا</h4>
+                                <div class="input-group">
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+    
+                            <!-- product categories -->
+                            <div class="pro-ctegories mb-3">
+                                <h4 class="custome-title">دسته بندی</h4>
+                                <select class="form-select">
+                                    <option selected>انتخاب دسته بندی</option>
+                                    <option value="1">کالای دیجیتال</option>
+                                    <option value="2">موبایل</option>
+                                    <option value="3">لوازم جانبی</option>
+                                    <option value="4">پوشاک</option>
+                                </select>
+                            </div>
+    
+                            <!-- product brands -->
+                            <div class="pro-brands mb-3">
+                                <h4 class="custome-title">برند</h4>
+                                <select class="form-select">
+                                    <option selected>انتخاب برند</option>
+                                    <option value="1">سامسونگ</option>
+                                    <option value="2">شیائومی</option>
+                                    <option value="3">ال جی</option>
+                                    <option value="4">آیفون</option>
+                                </select>
+                            </div>
+    
+                            <!-- product weight -->
+                            <div class="pro-weight mb-3">
+                                <h4 class="custome-title">وزن(گرم)</h4>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="">
+                                </div>
+                            </div>
+    
+                            <!-- product inventory -->
+                            <div class="pro-inventory mb-3">
+                                <h4 class="custome-title">موجودی انبار</h4>
+                                <div class="input-group">
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+    
+                            <!-- product tags -->
+                            <div class="pro-tags mb-3">
+                                <h4 class="custome-title">برچسب</h4>
+                                <ul class="tag-input mb-2"><input  type="text" placeholder="افزودن برچسب..."></ul>
+                                <p class="details custome-text-small text-end me-2 fw-light"><span></span> بر چسب مجاز</p>
+                            </div>
+
+                            <!-- product id -->
+                            <div class="pro-id mb-3">
+                                <h4 class="custome-title">شناسه</h4>
+                                <div class="input-group">
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+    
+                            <!-- product restore -->
+                            <div class="pro-restore mb-3">
+                                <h4 class="custome-title d-inline ms-3">امکان بازگشت کالا</h4>
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>   
+                        </div>
+                        <!-- ----- product information end ----- -->
+
+
+                        <!-- ----- product transport box start ----- -->
+                        <div class="pro-transport-box">
+                            <div class="custome-card">
+                                <div class="custome-card-header custome-card-header-icon">
+                                    <img src="./Img/truck-icon.svg" alt="truck icon">
+                                    <h4 class="custome-card-title">حمل و نقل</h4>
+                                </div>
+                                <div class="custome-card-body">
+                                    <!-- product transport free -->
+                                    <div class="transport-free mb-3">
+                                        <h5 class="custome-text">حمل و نقل رایگان</h5>
+                                        <label class="switch">
+                                            <input type="checkbox">
+                                            <span class="slider round"></span>
+                                        </label>
+                                    </div>
+
+                                    <!-- product transport fare, off or on -->
+                                    <div class="transport-fare mb-3">
+                                        <h5 class="custome-text">کرایه ثابت</h5>
+                                        <label class="switch"  onclick="transportFare()">
+                                            <input type="checkbox" name="switch" id="switch" checked>
+                                            <span class="slider round"></span>
+                                        </label>
+                                    </div>
+
+                                    <!-- product transport price -->
+                                    <div class="transport-price">
+                                        <h5 class="custome-text">هزینه حمل و نقل</h5>
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" id="transport-price-box">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ----- product transport box end ----- -->
+
+
+                        <!-- ----- number of profuct start ----- -->
+                        <div class="pro-num-box">
+                            <div class="custome-card">
+                                <div class="custome-card-header custome-card-header-icon">
+                                    <img src="./Img/warning-icon.svg" alt="warning icon for count inventory">
+                                    <h4 class="custome-card-title">اخطار کم بودن موجودی</h4>
+                                </div>
+                                <div class="custome-card-body">
+                                    <div class="num">
+                                        <h5 class="custome-text">تعداد</h5>
+                                        <div class="input-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ----- number of profuct end ----- -->
+
+
+                        <!-- ----- product video start ----- -->
+                        <div class="pro-video-box">
+                            <div class="custome-card">
+                                <div class="custome-card-header custome-card-header-icon">
+                                    <img src="./Img/video-icon.svg" alt="video icon">
+                                    <h4 class="custome-card-title">ویدیو</h4>
+                                </div>
+                                <div class="custome-card-body">
+                                    <!-- video link -->
+                                    <div class="video-link mb-4">
+                                        <h5 class="custome-text">لینک ویدیو</h5>
+                                        <div class="input-group input-group-sm">
+                                            <input type="text" class="form-control" readonly>
+                                        </div>
+                                    </div>
+
+                                    <!-- video warning -->
+                                    <p class="custome-text-small mb-4">لینک یوتیوب، آپارات و یا انواع پرونده های خاص مانند mp۴, WebM, ogv را وارد کنید.</p>
+
+                                    <!-- video upload-->
+                                    <div class="video-btn-upload text-end">
+                                        <button class="custome-btn custome-btn-outline me-2">آپلود ویدیو</button>
+                                        <input type="file" id="select-video" hidden>
+                                        <label for="select-video" class="custome-btn custome-btn-fill">انتخاب ویدیو</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ----- product video end ----- -->
+
+
+                        <!-- ----- product meta start ----- -->
+                        <div class="pro-meta-box">
+                            <div class="custome-card">
+                                <div class="custome-card-header custome-card-header-icon">
+                                    <img src="./Img/meta-icon.svg" alt="meta icon">
+                                    <h4 class="custome-card-title">متا</h4>
+                                </div>
+                                <div class="custome-card-body">
+                                    <!-- meta title -->
+                                    <div class="meta-title mb-3">
+                                        <h5 class="custome-text">عنوان متا</h5>
+                                        <div class="input-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+
+                                    <!-- meta description -->
+                                    <div class="meta-description">
+                                        <h5 class="custome-text">توضیحات متا</h5>
+                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ----- product meta end ----- -->
+                    </div>
+                    <!-- ----- right box end ------ -->
+
+
+
+                    <!-- ----- left box start ----- -->
+                    <div class="left-box">
+
+                        <!-- ----- product image start ----- -->
+                        <div class="pro-img-box">
+                            <div class="custome-card">
+                                <div class="custome-card-header custome-card-header-icon">
+                                    <img src="./Img/gallery-icon.svg" alt="picture icon">
+                                    <h4 class="custome-card-title">تصاویر</h4>
+                                </div>
+                                <div class="custome-card-body">
+                                    <!-- images -->
+                                    <div class="img-box img-box-none">
+                                        <img src="./Img/none-img.svg" alt="empty picture">
+                                    </div>
+
+                                    <!-- image warning -->
+                                    <p class="custome-text-small">اندازه تصاویر ۵۱۲*۵۱۲ نباشد.</p>
+
+                                    <!-- btn upload image -->
+                                    <div class="btn-upload-img text-end">
+                                        <input type="file" id="btn-upload-img" hidden>
+                                        <label for="btn-upload-img" class="custome-btn custome-btn-outline">آپلود عکس</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ----- product image end ----- -->
+
+
+                        <!-- ----- product amount start ----- -->
+                        <div class="pro-amount-box">
+                            <div class="custome-card">
+                                <div class="custome-card-header custome-card-header-icon">
+                                    <img src="./Img/amount-icon.svg" alt="amount icon">
+                                    <h4 class="custome-card-title">قیمت کالا</h4>
+                                </div>
+                                <div class="custome-card-body">
+                                    <!-- product amount -->
+                                    <div class="pro-amount mb-3">
+                                        <h5 class="custome-text">قیمت(واحد با تومان)</h5>
+                                        <div class="input-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+
+                                    <!-- product inventory -->
+                                    <div class="pro-inventory-amount mb-3">
+                                        <h5 class="custome-text">موجودی انبار</h5>
+                                        <div class="input-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+
+                                    <!-- product discount -->
+                                    <div class="pro-discount mb-3">
+                                        <h5 class="custome-text">تخفیف(به عدد یا درصد)</h5>
+                                        <div class="input-group">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+
+                                    <!-- product discount date -->
+                                    <div class="pro-discount-date">
+                                        <h5 class="custome-text">تاریخ انقضا تخفیف</h5>
+                                        <div class="input-group">
+                                            <input type="date" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ----- product amount end ----- -->
+
+
+                        <!-- ----- product features start ----- -->
+                        <div class="pro-features-box">
+                            <div class="custome-card">
+                                <div class="custome-card-header custome-card-header-icon">
+                                    <img src="./Img/product-features-icon.svg" alt="product features icon">
+                                    <h4 class="custome-card-title">ویژگی های کالا</h4>
+                                </div>
+                                <div class="custome-card-body">
+                                    <!-- product colors -->
+                                    <div class="pro-color mb-4">
+                                        <h5 class="custome-text mb-2">رنگ</h5>
+                                        <select class="form-select">
+                                            <option selected>انتخاب رنگ</option>
+                                            <option value="1">سفید</option>
+                                            <option value="2">مشکی</option>
+                                            <option value="3">مشکی مات</option>
+                                            <option value="4">خاکستری</option>
+                                        </select>
+                                    </div>
+
+                                    <!-- product fea -->
+                                    <div class="pro-fea mb-4">
+                                        <h5 class="custome-text mb-2">ویژگی ها</h5>
+                                        <select class="form-select">
+                                            <option selected>انتخاب ویژگی</option>
+                                            <option value="1">حافظه داخلی</option>
+                                            <option value="2">رم</option>
+                                            <option value="3">پردازنده</option>
+                                        </select>
+                                    </div>
+
+                                    <!-- product other features -->
+                                    <div class="pro-other-feature mb-4">
+                                        <h5 class="custome-text mb-2">سایر ویژگی ها(اختیاری)</h5>
+                                        <select class="form-select">
+                                            <option selected></option>
+                                        </select>
+                                    </div>
+
+                                    <!-- product features warning -->
+                                    <p class="custome-text-small">ویژگی های این محصول را انتخاب کنید و سپس مقادیر ورودی هر ویژگی را وارد کنید.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ----- product features end ----- -->
+                    </div>
+                    <!-- ----- left box end ----- -->
+                </div>
+                <!-- ----- content box, inputs end ----- -->
+            </section>
+            <!-- ----- content end ----- -->
+
+
+
+            <!-- ----- footer start ----- -->
+            <footer class="footer">
+                <div class="copy">
+                    <h5 class="custome-text mb-0">&copy 2023 
+                        <a href="./Index.html">بازار آنلاین ایران</a>
+                    </h5>
+                </div>
+            </footer>
+            <!-- ----- footer end ----- -->
+
+        </div>
+        <!-- ---------- header, section content end ---------- -->
+
+
+
+
+
+        <!-- ---------- side bar start ---------- -->
+        <aside class="side-bar .mini-side-bar">
+            <!-- this is button close side bar in small responsive -->
+            <div class="close-side-bar" onclick="toggleMenu()">
+                <img src="./Img/close-icon.svg" alt="close side bar icon">
+            </div>
+
+            <!-- side bar title -->
+            <div class="side-bar-top">
+                <div class="top-title">
+                    <h2>پنل مدیریت</h2>
+                </div>
+                <div class="top-pic">
+                    <img src="./Img/user-pic.svg" alt="user picture profile">
+                </div>
+            </div>
+
+            <!-- side bar menu -->
+            <menu class="side-bar-menu">
+                <li>
+                    <a href="#">صفحه اصلی</a>
+                    <img src="./Img/home-icon.svg" alt="home icon">
+                </li>
+                <li>
+                    <a href="#">افزودن محصول جدید</a>
+                    <img src="./Img/add-square-icon.svg" alt="add product icon">
+                </li>
+                <li>
+                    <a href="#">لیست محصولات</a>
+                    <img src="./Img/products-icon.svg" alt="products list icon">
+                </li>
+            </menu>
+        </aside>
+        <!-- ---------- side bar end ---------- -->
+    </div>
+
+    <!-- java script file -->
+    <script src="./Js/main.js"></script>
+</body>
+</html>
